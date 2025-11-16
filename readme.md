@@ -48,10 +48,14 @@ You need **Python 3.8+** installed on your system.
 ![alt text](<Screenshot 2025-11-16 131317.png>) 
 ![alt text](<Screenshot 2025-11-16 131252.png>)
 
+## 🚀 Installation and Usage
+
 ### 1. Clone the repository
 
-```bash
-git clone [https://github.com/Ram/nlp-document-analyzer.git](https://github.com/Ramlakhan12/nlp-project/blob/ram/nlpp.py)
-cd nlp-document-analyzer
+Open your terminal or command prompt and run the following commands:
 
-![alt text](<Screenshot 2025-11-16 131231.png>)
+```bash
+# Clone the entire repository
+git clone https://github.com/Ram/nlp-document-analyzer.git
+# Navigate into the project directory
+cd nlp-project
