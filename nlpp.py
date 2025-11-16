@@ -20,55 +20,6 @@ import re
 import warnings
 warnings.filterwarnings('ignore')
 
-# Download required NLTK data
-# def ensure_nltk_data():
-#     """Ensure NLTK data is available with manual downloads if needed"""
-#     import ssl
-    
-#     try:
-#         _create_unverified_https_context = ssl._create_unverified_context
-#     except AttributeError:
-#         pass
-#     else:
-#         ssl._create_default_https_context = _create_unverified_https_context
-    
-#     # Try to download all variants
-#     downloads = ['punkt', 'punkt_tab', 'stopwords', 'wordnet', 'averaged_perceptron_tagger']
-    
-#     for item in downloads:
-#         try:
-#             nltk.download(item, quiet=True)
-#         except:
-#             continue
-
-# @st.cache_resource
-# def download_nltk_data():
-#     """Download required NLTK data with fallback for different versions"""
-#     ensure_nltk_data()
-    
-#     required_data = [
-#         ('tokenizers/punkt', ['punkt_tab', 'punkt']),
-#         ('corpora/stopwords', ['stopwords']),
-#         ('corpora/wordnet', ['wordnet']),
-#         ('taggers/averaged_perceptron_tagger', ['averaged_perceptron_tagger'])
-#     ]
-    
-#     for data_path, download_names in required_data:
-#         try:
-#             nltk.data.find(data_path)
-#         except LookupError:
-#             with st.spinner(f"Downloading NLTK data: {download_names[0]}..."):
-#                 downloaded = False
-#                 for name in download_names:
-#                     try:
-#                         nltk.download(name, quiet=True)
-#                         downloaded = True
-#                         break
-#                     except Exception as e:
-#                         continue
-                
-#                 if not downloaded:
-#                     st.warning(f"Could not download {download_names}. Some features may not work.")
 
 class DocumentAnalyzer:
     def __init__(self):
